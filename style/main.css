@@ -36,24 +36,22 @@ section {
   background: white;
 }*/
 section:nth-child(2) {
-    /*background: #F64747;*/
-    /*background-size: 200%;
-    background: url("../assets/toffia-landscape.jpg") no-repeat center;*/
+  background: rgba(246, 71, 71, 0.2);
 }
 section:nth-child(3) {
-  /*background: #22A7F0;*/
+  background: rgba(34, 167, 240, 0.2);
 }
 section:nth-child(4) {
-  /*background: #F9690E;*/
+  background: rgba(249, 105, 14, 0.2);
 }
 section:nth-child(5) {
-  /*background: #9B59B6;*/
+  background: rgba(155, 89, 182, 0.2);
 }
 section:nth-child(6) {
-  /*background: #03C9A9;*/
+  background: rgba(3, 201, 169, 0.2);
 }
 section:nth-child(7) {
-  /*background: #ffcc00;*/
+  background: rgb(255, 204, 0, 0.2);
 }
 
 #background {
