@@ -30,7 +30,16 @@ section {
     -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
 
+section .title {
+  display: block;
+  float: left;
+}
+
+section .subtitle {
+  display: block;
+  clear: both;
 }
 /*section:nth-child(1) {
   background: white;
