@@ -3,7 +3,8 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   text-shadow: 1px 1px 5px #0d1a26;
-  color: #c6d9ec;
+  /*color: #c6d9ec;*/
+  color: #000;
   /*background: rgba(230,231,232,1);*/
   position: relative;
 }
@@ -56,18 +57,21 @@ section:nth-child(7) {
     background-size: 100% 100%;
 }
 
-.parallax {
+/*.parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-}
+}*/
 .parallax__layer {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.no-parallax {
+    position: absolute;
 }
 .parallax__layer--base {
   transform: translateZ(0);
