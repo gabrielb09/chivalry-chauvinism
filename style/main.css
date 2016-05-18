@@ -3,32 +3,36 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #fff;
+  background: background:rgba(230,231,232,1);
   position: relative;
 }
 
 section {
-  height: 100vh;
-  font-size: 40px;
-  font-weight: 100;
-  background-color: #22A7F0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
+    height: 100vh;
+    font-size: 40px;
+    font-weight: 100;
+    background-color: #22A7F0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
-section:nth-child(1) {
+/*section:nth-child(1) {
   background: white;
-}
+}*/
 section:nth-child(2) {
-  background: #F64747;
+    background: #F64747;
+    /*background-size: 200%;
+    background: url("../assets/toffia-landscape.jpg") no-repeat center;*/
 }
 section:nth-child(3) {
   background: #22A7F0;
