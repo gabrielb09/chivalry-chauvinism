@@ -44,7 +44,7 @@ section .subtitle {
 }
 
 .work {
-  font-size: 1.875px;
+  font-size: 1.875em;
 }
 /*section:nth-child(1) {
   background: white;
