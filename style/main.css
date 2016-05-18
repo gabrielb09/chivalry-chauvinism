@@ -40,12 +40,11 @@ section .title {
 section .subtitle {
   clear: both;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875px;
 }
 
 .work {
-  font-size: 30px;
-  color: blue;
+  font-size: 1.875px;
 }
 /*section:nth-child(1) {
   background: white;
