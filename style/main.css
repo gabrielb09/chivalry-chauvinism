@@ -82,7 +82,7 @@ section:nth-child(7) {
   transform: translateZ(0);
 }
 .parallax__layer--fore {
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px);
 }
 
 .nav__wrapper {
