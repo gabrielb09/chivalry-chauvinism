@@ -1,0 +1,53 @@
+/*
+Error: Invalid CSS after "100vh": expected expression (e.g. 1px, bold), was ";"
+        on line 2 of style/main.sass
+
+1: .wrapper {
+2:   min-height: 100vh;
+3:   font-family: 'Roboto Slab', serif;
+4:   font-weight: 300;
+5:   color: #fff;
+6:   position: relative;
+7: }
+
+Backtrace:
+style/main.sass:2
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1179:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:227:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:702:in `assert_done'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:64:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:223:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/script.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:1145:in `parse_script'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:718:in `parse_property'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:689:in `parse_property_or_rule'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:655:in `parse_line'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:533:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:552:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:551:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:551:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:542:in `block in build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:535:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:535:in `build_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:552:in `block in append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:551:in `each'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:551:in `append_children'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:378:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:295:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:293:in `watch'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:109:in `method_missing'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:379:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"100vh\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of style/main.sass\A \A 1: .wrapper {\A 2:   min-height: 100vh;\A 3:   font-family: 'Roboto Slab', serif;\A 4:   font-weight: 300;\A 5:   color: #fff;\A 6:   position: relative;\A 7: }"; }
