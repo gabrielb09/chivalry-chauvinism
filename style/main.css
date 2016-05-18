@@ -40,6 +40,8 @@ section .title {
 section .subtitle {
   display: block;
   clear: both;
+  position: center;
+  font-size: 30px;
 }
 /*section:nth-child(1) {
   background: white;
