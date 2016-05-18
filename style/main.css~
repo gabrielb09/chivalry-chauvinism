@@ -1,14 +1,12 @@
 body {
-    background: url("../assets/lake-mountain.jpg") fixed center center no-repeat;
-    background-size: 100% 100%;
+    background: url("../assets/toffia-landscape.jpg") fixed center center no-repeat;
 }
 
 .wrapper {
   min-height: 100vh;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  text-shadow: 1px 1px 5px #0d1a26;
-  color: #c6d9ec;
+  color: #fff;
   /*background: rgba(230,231,232,1);*/
   position: relative;
 }
