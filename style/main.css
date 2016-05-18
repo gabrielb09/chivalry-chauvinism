@@ -33,12 +33,10 @@ section {
 }
 
 section .title {
-  display: block;
   float: left;
 }
 
 section .subtitle {
-  display: block;
   clear: both;
   position: center;
   font-size: 30px;
