@@ -89,7 +89,7 @@ section .subitem a:hover {
           transform: translate(-50%, -50%);
 }
 
-.card-2 {
+.card .card-2 {
   visibility: hidden;
 }
 
