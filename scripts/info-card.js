@@ -3,7 +3,9 @@ $(document).ready(function() {
   var classList = $(".card").attr('class').split(/\s+/);
   $.each(classList, function(index, item) {
     if (item.indexOf('-') != -1) { //has a dash in the class
-      $(item).css("visibility", "hidden");
+      // $(item).css("visibility", "hidden");
+      console.log(item);
+      $(item).hide();
     }
   });
   
