@@ -5,7 +5,6 @@ $(document).ready(function() {
     if (item.indexOf('-') != -1 && item.indexOf('card') != -1) { //has a dash in the class
       // $(item).css("visibility", "hidden");
       console.log(item);
-      $(item).hide();
     }
   });
   
@@ -15,5 +14,6 @@ $(document).ready(function() {
     $.each(classList, function(index, item) {
         
     });
+    $(".card.card-2").css("visibility", "visible");
   });
 });
