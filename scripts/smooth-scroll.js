@@ -15,3 +15,10 @@ $(document).ready(function() {
     }
   });
 });
+
+// var classList = $('#divId').attr('class').split(/\s+/);
+// $.each(classList, function(index, item) {
+//     if (item === 'someClass') {
+//         //do something
+//     }
+// });

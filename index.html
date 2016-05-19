@@ -16,6 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="scripts/smooth-scroll.js"></script>
+  <script src="scripts/info-card.js"></script>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -75,10 +76,17 @@
         </li>
       </ul>
     </nav>
+    <div class="card__wrapper">
+      <div class="card author-bio card2" hidden>
+        <div>
+          This is a test.
+        </div>
+      </div>
+    </div>
     <div class="parallax" data-spy="scroll" data-target="#navbar" id="content">
       <div class="parallax__group" id="section1">
         <div class="parallax__layer parallax__layer--base" id="background1">
-          <img src="assets/lake-mountain.jpg" width=100% />
+          <img src="assets/lake-mountain.jpg" width="100%" height=100% />
         </div>
 
         <div class="parallax__layer parallax__layer--fore">
@@ -99,10 +107,10 @@
             <div class="text">
               <div class="title">Candide</div>
               <div class="subtitle">by Voltaire</div>
-              <div class="subitem author-bio">Author Bio</div>
-              <div class="subitem plot-summary">Plot Summary</div>
-              <div class="subitem char-anaylsis">Character Analysis</div>
-              <div class="subitem themes">Major Elements</div>
+              <div class="subitem author-bio card2"><a>Author Bio</a></div>
+              <div class="subitem plot-summary card2"><a>Plot Summary</a></div>
+              <div class="subitem char-anaylsis card2"><a>Character Analysis</a></div>
+              <div class="subitem themes card2"><a>Major Elements</a></div>
             </div>
           </section>
         </div>
@@ -110,7 +118,7 @@
 
       <div class="parallax__group" id="section3">
         <div class="parallax__layer parallax__layer--base" id="background3">
-          <img src="assets/toffia-landscape.jpg" width=100% />
+          <img src="assets/toffia-landscape.jpg" class="blur" width="100%" height=100% />
         </div>
 
         <div class="parallax__layer parallax__layer--fore">
@@ -146,7 +154,7 @@
 
       <div class="parallax__group" id="section5">
         <div class="parallax__layer parallax__layer--base" id="background5">
-
+          <img src="assets/stars.jpg" width=100% height=100% />
         </div>
 
         <div class="parallax__layer parallax__layer--fore">
@@ -166,7 +174,12 @@
 
         <div class="parallax__layer parallax__layer--fore">
           <section class="section section6">
-            Original Media
+            <div class="text">
+              <div class="title">Pop Culture Connections</div>
+              <div class="subitem work">Work 1</div>
+              <div class="subitem work">Work 2</div>
+              <div class="subitem work">Work 2</div>
+            </div>
           </section>
         </div>
       </div>
