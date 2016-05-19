@@ -1,8 +1,7 @@
-var sel = "section .subitem a";
 $(document).ready(function() {
-  $(sel).click(function() {
-    console.log("clicked");
-    var classList = $(sel).attr('class').split(/\s+/);
+  $("section .subitem a").click(function() {
+    console.log("click");
+    var classList = $("section .subitem").attr('class').split(/\s+/);
     $.each(classList, function(index, item) {
         console.log(item);
     });
