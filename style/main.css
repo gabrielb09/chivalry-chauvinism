@@ -70,7 +70,7 @@ section .subitem a:hover {
 }
 
 .text {
-  display: inline-block;
+  width: 40%;
 }
 
 .card {
