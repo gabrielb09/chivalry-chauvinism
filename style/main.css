@@ -36,18 +36,21 @@ section {
 section .title {
   /*float: left;*/
   font-size: 1.2em;
+  font-weight: 500;
   text-align: center;
 }
 
 section .subtitle {
   clear: both;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  padding-bottom: 20px;
 }
 
-.work {
-  font-size: 1.875em;
+section .subitem {
+  font-size: 0.9em;
 }
+
 /*section:nth-child(1) {
   background: white;
 }*/
@@ -104,7 +107,7 @@ section:nth-child(7) {
   z-index: 2;
   position: fixed;
   height: 100%;
-  padding: 30px;
+  padding: 2em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,12 +124,12 @@ section:nth-child(7) {
   margin: 0 0 100px 30px;
 }
 .nav__counter {
-  font-size: 24px;
+  font-size: 1.3em;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 .nav__title {
-  font-size: 32px;
+  font-size: 1.5em;
   font-weight: 300;
   margin: 0 0 0.25em;
   width: 300px;
@@ -138,8 +141,8 @@ section:nth-child(7) {
 }
 .nav__body {
   font-weight: 100;
-  font-size: 18px;
-  font-size: 18px;
+  font-size: 1.2em;
+  font-size: 1.2em;
   width: 300px;
   height: 0;
   overflow: hidden;
@@ -188,7 +191,8 @@ section:nth-child(7) {
   top: 35px;
 }
 .nav li.active .nav__counter {
-  font-size: 48px;
+  font-size: 2.1em;
+  font-weight: 500;
 }
 .nav li.active .nav__title {
   height: 40px;
