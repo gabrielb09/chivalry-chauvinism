@@ -49,7 +49,7 @@ section .subtitle {
 
 section .subitem {
   font-size: 0.9em;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 section .subitem a {
