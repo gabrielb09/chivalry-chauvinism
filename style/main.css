@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  z-index: 1;
+  /*z-index: 1;*/
   height: 100vh;
   font-size: 3em;
   font-weight: 100;
@@ -54,7 +54,7 @@ section .subitem {
 /*section:nth-child(1) {
   background: white;
 }*/
-section:nth-child(2) {
+/*#:nth-child(2) {
   background: rgba(246, 71, 71, 0.8);
 }
 section:nth-child(3) {
@@ -71,12 +71,25 @@ section:nth-child(6) {
 }
 section:nth-child(7) {
   background: rgb(255, 204, 0, 0.2);
-}
+}*/
 
-#background1 {
+/*#background1 {
     background: url("../assets/lake-mountain.jpg") fixed center center no-repeat;
     background-size: 100% 100%;
+}*/
+
+#section2 .parallax__layer--fore {
+  background: rgba(246, 71, 71, 1);
 }
+
+#section4 .parallax__layer--fore {
+  background: rgba(249, 105, 14, 1);
+}
+
+/*#background4 {
+    background: url("../assets/toffia-landscape.jpg") fixed center center no-repeat;
+    background-size: 100% 100%;
+}*/
 
 
 .parallax {
@@ -88,7 +101,8 @@ section:nth-child(7) {
 .parallax__group {
   position: relative;
   height: 100vh;
-  transform-style: preserve-3d;
+  /*transform-style: preserve-3d;*/
+  /*transform: translate3d(500px, 0, -30px) rotateY(30deg) rotateZ(30deg);*/
 }
 .parallax__layer {
   position: absolute;
@@ -97,10 +111,16 @@ section:nth-child(7) {
   bottom: 0;
   left: 0;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
+.parallax__layer img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .parallax__layer--fore {
+  z-index: 2;
+  transform: translateZ(0);
+}
+.parallax__layer--base {
+  z-index: 1;
   transform: translateZ(-1px) scale(2);
 }
 
@@ -109,7 +129,7 @@ section:nth-child(7) {
 **************/
 
 .nav__wrapper {
-  z-index: 2;
+  z-index: 10;
   position: fixed;
   height: 100%;
   padding: 2em;
