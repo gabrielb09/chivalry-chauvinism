@@ -79,12 +79,12 @@ section:nth-child(7) {
 }
 
 
-/*.parallax {
+.parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-}*/
+}
 .parallax__layer {
   position: absolute;
   top: 0;
