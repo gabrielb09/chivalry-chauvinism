@@ -58,11 +58,12 @@ section .subitem a {
   padding: 0;
   color: #000;
   -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+          transition: all 0.15s ease-out;
 }
 
 section .subitem a:hover {
   padding-left: 10px;
+  cursor: pointer;
 }
 
 .blur {
@@ -72,6 +73,10 @@ section .subitem a:hover {
 
 .text {
   width: 40%;
+}
+
+@keyframes card-show {
+  
 }
 
 .card {
@@ -87,6 +92,9 @@ section .subitem a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
+  -webkit-transition: all 0.15s ease-out;
+          transition: all 0.15s ease-out;
 }
 
 .card.card-2 {
