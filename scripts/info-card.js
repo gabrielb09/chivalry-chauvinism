@@ -13,6 +13,7 @@ $(document).ready(function() {
   $("section .subitem a").click(function() {
     var classList = $(this).parent().attr('class').split(/\s+/);
     $(".card." + classList[2] + "." + classList[1]).addClass("cardpop");
+    $(".card." + classList[2] + "." + classList[1]).addClass("cardfade");
   });
 });
 

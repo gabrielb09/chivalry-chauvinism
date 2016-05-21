@@ -121,12 +121,15 @@ section .subitem a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  animation: cardhide .2s;
 }
 
 .card div.title {
   font-size: 3em;
   text-align: center;
+}
+
+.cardfade {
+  animation: cardhide .2s;
 }
 
 .cardpop {
