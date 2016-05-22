@@ -10,11 +10,27 @@ $(document).ready(function() {
     }
   });
 
+  // watch for clicks on links and add classes for animation
   $("section .subitem a").click(function() {
     var classList = $(this).parent().attr('class').split(/\s+/);
     $(".card." + classList[2] + "." + classList[1]).addClass("cardpop");
     $(".card." + classList[2] + "." + classList[1]).addClass("cardfade");
+    setTimeout(function() {cardOpen = true; }, 500);
   });
+
+  // watch for clicks of the close button
+  $(".cardclose").click(function() {
+    hideAll();
+  });
+
+  // click outside of card to hide card (this doesn't work yet :(   )
+  // $("div.card").mouseup(function (e) {
+  //     var container = $("div.card");
+
+  //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+  //         console.log("he");
+  //     }
+  // });
 });
 
 function hideAll() {
@@ -23,12 +39,4 @@ function hideAll() {
   $.each($('.card'), function(index, item) {
     $(item).removeClass("cardpop");
   });
-  // $.each(classList, function(index, item) {
-  //   if (item.indexOf('-') != -1 && item.indexOf('card') != -1) { //has a dash in the class
-  //     $(".card." + item).removeClass("cardpop");
-  //     console.log(".card." + item);
-  //     // $(item).hide();
-  //     // console.log(item);
-  //   }
-  // });
 }

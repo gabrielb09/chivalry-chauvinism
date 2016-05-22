@@ -79,6 +79,7 @@ section .subitem a:hover {
   from {
     width: 20%;
     height: 20%;
+    border-radius: 50%;
   }
 
 /*  80% {
@@ -88,6 +89,7 @@ section .subitem a:hover {
   to {
     width: 80%;
     height: 80%;
+    border-radius: 0%;
   }
 }
 
@@ -112,9 +114,8 @@ section .subitem a:hover {
   width: 80%;
   height: 80%;
   z-index: 12;
-  background: rgba(80, 93, 120, 0.9);
-  box-shadow: 0px 0px 20px 3px #595858;
-  border-radius: 5px;
+  box-shadow: 0px 0px 20px 2px #595858;
+  /*border-radius: 5px;*/
   padding: 5em;
   position: fixed;
   top: 50%;
@@ -128,13 +129,104 @@ section .subitem a:hover {
   text-align: center;
 }
 
+.cardclose {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 100%;
+  border-color: black;
+  content: "";
+  cursor: pointer;
+}
+.cardclose:before {
+  width: 24px;
+  height: 4px;
+  background-color: black;
+  content: "";
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  position: absolute;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cardclose:after {
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -2px;
+  width: 24px;
+  height: 4px;
+  background-color: black;
+  content: "";
+  position: absolute;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.cardclose {
+  -moz-transition: box-shadow 200ms ease-out, -moz-transform 200ms ease-out, opacity 200ms ease-in-out;
+  -o-transition: box-shadow 200ms ease-out, -o-transform 200ms ease-out, opacity 200ms ease-in-out;
+  -webkit-transition: box-shadow 200ms ease-out, -webkit-transform 200ms ease-out, opacity 200ms ease-in-out;
+  transition: box-shadow 200ms ease-out, transform 200ms ease-out, opacity 200ms ease-in-out;
+}
+.cardclose:after, .cardclose:before {
+  -moz-transition: linear 200ms;
+  -o-transition: linear 200ms;
+  -webkit-transition: linear 200ms;
+  transition: linear 200ms;
+}
+.cardclose:hover {
+  -moz-box-shadow: 0px 0px 0px 20px #000 inset;
+  -webkit-box-shadow: 0px 0px 0px 20px #000 inset;
+  box-shadow: 0px 0px 0px 20px #000 inset;
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.cardclose:hover:after {
+  background-color: #fff;
+  -moz-transform: rotate(-45deg) scale(0.6);
+  -ms-transform: rotate(-45deg) scale(0.6);
+  -webkit-transform: rotate(-45deg) scale(0.6);
+  transform: rotate(-45deg) scale(0.6);
+}
+.cardclose:hover:before {
+  background-color: #fff;
+  -moz-transform: rotate(45deg) scale(0.6);
+  -ms-transform: rotate(45deg) scale(0.6);
+  -webkit-transform: rotate(45deg) scale(0.6);
+  transform: rotate(45deg) scale(0.6);
+}
+
 .cardfade {
-  animation: cardhide .2s;
+  animation: cardhide .1s;
 }
 
 .cardpop {
   visibility: visible;
   animation: cardshow .4s cubic-bezier(.33,1.56,1,.9);
+}
+
+.card.card-2 { /* Candide */
+  background: #22A7F0;
+}
+
+.card.card-3 { /* Pygmalion */
+  background: #9B59B6;
+}
+
+.card.card-4 { /* Brave New World */
+  background: #ffcc00;
 }
 
 /* 17 5 129 */
