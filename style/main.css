@@ -168,8 +168,6 @@ section .subitem a:hover {
 .parallax__group {
   position: relative;
   height: 100vh;
-  /*transform-style: preserve-3d;*/
-  /*transform: translate3d(500px, 0, -30px) rotateY(30deg) rotateZ(30deg);*/
 }
 .parallax__layer {
   padding: 0;
@@ -193,7 +191,7 @@ section .subitem a:hover {
 }
 .parallax__layer--base {
   z-index: 1;
-  transform: translateZ(-1px) scale(2.1);
+  transform: translateZ(-0.9px) scale(2.1);
 }
 
 /*************
@@ -202,6 +200,7 @@ section .subitem a:hover {
 .nav__wrapper {
   z-index: 10;
   position: fixed;
+  width: 30%;
   height: 100%;
   padding: 2em;
   display: -webkit-box;
@@ -217,7 +216,7 @@ section .subitem a:hover {
           justify-content: flex-end;
 }
 .nav {
-  margin: 0 0 100px 30px;
+  margin: 0 0 20% 8%;
 }
 .nav__counter {
   font-size: 1.3em;
@@ -228,7 +227,7 @@ section .subitem a:hover {
   font-size: 1.5em;
   font-weight: 300;
   margin: 0 0 0.25em;
-  width: 300px;
+  /*width: 30%;*/
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -239,7 +238,7 @@ section .subitem a:hover {
   font-weight: 100;
   font-size: 1.2em;
   font-size: 1.2em;
-  width: 300px;
+  /*width: 30%;*/
   height: 0;
   overflow: hidden;
   opacity: 0;
