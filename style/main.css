@@ -254,7 +254,7 @@ section .subitem a:hover {
 .parallax {
   perspective: 1px;
   height: 100vh;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   overflow-y: auto;
 }
 .parallax__group {
