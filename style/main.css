@@ -212,7 +212,7 @@ section .subitem a:hover {
   animation: cardhide .1s;
 }
 
-.cardpop:not(.cardshow p) {
+.cardpop {
   visibility: visible;
   animation: cardshow .4s cubic-bezier(.33,1.56,1,.9);
 }
