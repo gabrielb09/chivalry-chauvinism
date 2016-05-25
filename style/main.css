@@ -232,7 +232,8 @@ section .subitem a:hover {
 /* 17 5 129 */
 
 #section2 .parallax__layer--fore { /* Candide */
-  background: rgba(246, 71, 71, 1);
+  background-image: url("https://markb4.files.wordpress.com/2013/04/el-dorado.jpg");
+  background-size: 100% 100%;
 }
 
 #section4 .parallax__layer--fore { /* Brave New World */
