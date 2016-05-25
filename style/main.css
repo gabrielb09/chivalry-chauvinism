@@ -236,7 +236,8 @@ section .subitem a:hover {
 }
 
 #section4 .parallax__layer--fore {
-  background: rgba(249, 105, 14, 1);
+  /*background: rgba(249, 105, 14, 1);*/
+  background-image: url("../assets/chivalry.jpg");
 }
 
 #section6 .parallax__layer--fore {
