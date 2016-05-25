@@ -80,7 +80,6 @@ section .subitem a:hover {
     width: 20%;
     height: 20%;
     border-radius: 40%;
-    color: rgba(0, 0, 0, 0);
   }
 
 /*  80% {
@@ -91,7 +90,6 @@ section .subitem a:hover {
     width: 80%;
     height: 80%;
     border-radius: 0%;
-    color: rgba(0, 0, 0, 1);
   }
 }
 
@@ -214,7 +212,7 @@ section .subitem a:hover {
   animation: cardhide .1s;
 }
 
-.cardpop {
+.cardpop:not(.cardshow p) {
   visibility: visible;
   animation: cardshow .4s cubic-bezier(.33,1.56,1,.9);
 }
