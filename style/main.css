@@ -231,17 +231,17 @@ section .subitem a:hover {
 
 /* 17 5 129 */
 
-#section2 .parallax__layer--fore {
+#section2 .parallax__layer--fore { /* Candide */
   background: rgba(246, 71, 71, 1);
 }
 
-#section4 .parallax__layer--fore {
+#section4 .parallax__layer--fore { /* Brave New World */
   /*background: rgba(249, 105, 14, 1);*/
-  background-image: url("http://www.cinemablend.com/images/sections/71705/brave_new_world_71705.jpg");
+  background-image: url("http://media02.hongkiat.com/cities-of-the-futures/futurecitytoorobertdbrown.jpg");
   background-size: 100% 100%;
 }
 
-#section6 .parallax__layer--fore {
+#section6 .parallax__layer--fore { /* Original Works */
   background: rgba(3, 201, 169, 1);
 }
 
